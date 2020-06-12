@@ -32,7 +32,7 @@ p, span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin: 0 auto;
+    margin: 0 30px;
     padding: 0 350px;
     width: 70vw;
     height: 250px;
@@ -48,8 +48,8 @@ p, span {
 
     position: absolute;
     z-index: -1;
-    left: 250px;
-    top: 315px;
+    left: 150px;
+    top: 359px;
 }
 
 .content .main, .content .progresso {
@@ -136,7 +136,7 @@ p, span {
     border-top-color: white;
     border-bottom: 0;
     border-right: 0;
-    margin-left: 58px;
+    margin-left: 57px;
     margin-bottom: -16px;
 
 }
