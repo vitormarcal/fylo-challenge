@@ -50,7 +50,11 @@
   
       <div class="bar">
         <p>You’ve used <strong>815 GB</strong> of your storage</p>
-        <progress  value="815" max="1000">815</progress>
+        <div class="barra-progresso">
+          <div class="usado">
+            <div class="bola"></div>
+          </div>
+        </div>
         <div class="capacity">
           <span>
             0 GB
@@ -69,5 +73,23 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://vitormarcal.com.br/" target="_blank">Vítor Marçal</a>.
   </div>
+
+  <script>
+    
+    const barraUsada = document.querySelector('.usado')
+    let usado = 1;
+    let total = 81;
+
+    const interval = setInterval(incrementa, 10)
+
+
+    function incrementa() {
+      if (usado > 81) {
+        clearInterval(interval)
+      }
+      barraUsada.style.width = `${usado++}%` 
+    }  
+
+  </script>
 </body>
 </html>

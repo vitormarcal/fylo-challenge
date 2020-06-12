@@ -163,33 +163,33 @@ p, span {
     color: hsl(243, 100%, 93%);
 }
 
-.content .progresso .bar progress {
+.content .progresso .bar .barra-progresso {
     width: 510px;
-    height: 15px;
-
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-.content .progresso .bar progress[value]::-webkit-progress-bar {
-    background-color: hsl(229, 57%, 11%);
+    height: 20px;
     border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    border: 2px solid transparent;
+    background: hsl(229, 57%, 11%);
 }
 
-.content .progresso .bar progress[value]::-webkit-progress-value {
-    background-image:
-	   -webkit-linear-gradient(-45deg, 
-	                           transparent 80%, rgba(0, 0, 0, .1) 80%, 
-	                           rgba(0,0, 0, .1) 80%, transparent 20%),
-	   -webkit-linear-gradient(top, 
-	                           rgba(255, 255, 255, .25), 
-	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, #f49d96, #ed5a91);
-    
-    border-radius: 15px; 
-    background-size: 35px 20px, 100% 100%, 100% 100%;
-  }
+.content .progresso .bar .barra-progresso .usado {
+    width: 1%;
+    height: 15px;
+    border-radius: 15px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%),  hsl(335, 100%, 65%));
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.content .progresso .bar .barra-progresso .usado .bola {
+    background: white;
+    border: 2px solid transparent;
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    margin-right: 2px;
+}
 
 
 .content .progresso .bar .capacity {
