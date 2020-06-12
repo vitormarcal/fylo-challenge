@@ -35,6 +35,8 @@ p, span {
     margin: 0 auto;
     padding: 0 350px;
     width: 70vw;
+    height: 250px;
+    align-items: end;
 }
 
 .content::after  {
@@ -52,7 +54,6 @@ p, span {
 
 .content .main, .content .progresso {
     background-color: #1e2c68;
-    padding: 40px;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -60,7 +61,10 @@ p, span {
 }
 
 .content .main {
-    border-top-right-radius: 50%;
+    border-top-right-radius: 100px;
+    padding: 40px 40px;
+    width: 350px;
+    height: 200px;
 }
 
 .content .main header span {
@@ -97,17 +101,17 @@ p, span {
 
 .content .progresso {
     width: 600px;
+    height: 150px;
+    padding-left: 40px;
 }
 
 .content .progresso .message {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
 }
 
-.content .progresso .message .bloco-invisivel {
-    width: 360px;
-}
 
 .content .progresso .message .balao {
    position: relative;
@@ -116,7 +120,8 @@ p, span {
    display: flex;
    align-items: center;
    padding: 10px 10px;
-   bottom: 85px;
+   bottom: 45px;
+   left: 340px;
    width: 165px;
 }
 
@@ -149,8 +154,12 @@ p, span {
     color: #a2a4a9;
 }
 
+.content .progresso .bar {
+    margin-top: 30px;
+}
+
 .content .progresso .bar p {
-    margin: 5px auto;
+    line-height: 40px;
 }
 
 .content .progresso .bar progress {
