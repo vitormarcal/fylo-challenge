@@ -103,6 +103,11 @@ p, span {
         border-radius: 10px;
         border: none;
         background: hsl(229, 57%, 11%);
+        cursor: pointer;
+}
+
+.content .main .acoes li button img {
+    cursor: pointer;
 }
 
 .content .progresso {
