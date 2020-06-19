@@ -14,7 +14,19 @@ body {
     justify-content: center;
     height: 60vh;
     width: 1440px;
+}
 
+body::after  {
+    content: '';
+    background: url(../images/bg-desktop.svg) no-repeat center;
+    width: 1400px;
+    height: 700px;
+    border-radius: 20px;
+
+    position: absolute;
+    z-index: -1;
+    left: 150px;
+    top: 172px;
 }
 
 h1 {
@@ -37,19 +49,6 @@ p, span {
     width: 70vw;
     height: 250px;
     align-items: end;
-}
-
-.content::after  {
-    content: '';
-    background: url(../images/bg-desktop.svg) no-repeat center;
-    width: 1400px;
-    height: 700px;
-    border-radius: 20px;
-
-    position: absolute;
-    z-index: -1;
-    left: 150px;
-    top: 172px;
 }
 
 .content .main, .content .progresso {
